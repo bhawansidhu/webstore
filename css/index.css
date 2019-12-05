@@ -1,98 +1,140 @@
+body{
+    background-color:rgb(230, 231, 231);;
+    margin: 0;
+    padding: 0;
+}
+
+
 header {
-    background-color:lightslategray;
+    background-color:rgb(205, 212, 212);
     width: 100%;
-    height: 30vh;
+    height: 36vh;
 }
 
 .logo {
      text-align: center;
 }
-.main-nav{
-    display: block;
-    text-align: right;
-}
-
-.main-nav-list {
-    display: inline-block;
+.navList {
     list-style-type: none;
-    margin-bottom: 1em;
+    margin-bottom: 2.5em;
     padding: 0;
     overflow: hidden;
-  /*  background-color: rgba(13, 10, 175, 0.87); */
+    
 }
 
-/*.main-nav-list-items {
-    float: left;
-} */
-
-.main-nav-list-items a {
+.navListItems {
+    padding: 0.3em 0.3em;
+    float: right;
+    font-size: 1.2em;
+    font-weight: bold;
    
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+   
+}
+
+.navListItems a {
+    color: rgb(107, 13, 72); 
+    padding: 13px 17px;
+    display: block;
+
     text-decoration: none;
 }
-
-.search {
+.searchbar {
     text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 26px;
+  
 }
 
-#find {
-    font-family: 'Baskervville', serif;
-    text-align: center;
-    margin-left: 4em;
-    width: 300px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
+#search {
+   
+    width: 400px;
     border-radius: 4px;
-    font-size: 16px;
-    background-color: rgba(13, 10, 175, 0.87);
-    color: white;
+    font-size: 15px;
+    border: lightsteelblue;
+    border-radius: 0.1em;
+    background-color: rgb(162, 162, 170);
+    box-shadow: 2px 2px 1px 1px rgba(193, 196, 189, 0.5);
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out; 
 }
 
-#find:focus {
-    width: 450px;
+#search :hover {
+    color: lightseagreen;
 }
 
-.sortOptionsList {
+#searchBtn{
+    font-size: 35px;
+    padding: 0 0.5em;
+    border: lightsteelblue;
+    border-radius: 0.1em;
+    background-color: rgb(162, 162, 170);
+    box-shadow: 2px 2px 1px 1px rgba(193, 196, 189, 0.5);
+}
+
+.sortMenuBar{
+    margin-top: 0;
+    text-align: center;
+}
+
+.sortList {
+    color: white;
     list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: rgb(128, 12, 85); 
 }
 
-.sortOptionsList .sortOptionsListItem {
+.sortList .sortListItem {
+    font-size: 1.5em;
+    padding: 0.4em 1.4em;
     display: inline-block;
-    font-size: 20px;
-    padding: 20px;
 }
 
-.sortOptionsBtn {
-    background-color: greenyellow;
-    border-radius: 14px;
-    color: black;
-    padding: 6px 8px;
+
+.sortBtn {
+    
+    color: white;
+    padding: 7px 8px;
+    background-color: rgba(243, 150, 11, 0.979);
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     -webkit-transition-duration: 0.2s;
-    /* Safari */
     transition-duration: 0.2s;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 3px 8px;
+    
 }
 
-.sortOptionsBtn:hover {
-    font-family: 'Roboto Mono', monospace;
-    background-color: rgba(13, 10, 175, 0.87);
-    color: white;
-    border: 2px solid rgb(226, 223, 223);
+.sortBtn:hover {
+    text-decoration: underline;
+    color: black;
+    background-color: thistle; 
+}
+
+.display{
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(95, 11, 64);
+}
+
+.leftNavBar {
+    background-color: rgb(128, 12, 85);;
+    padding: 2em;
+    margin: 1em 0 1em 2em;
+    color: rgb(248, 255, 249);
+    height: auto;
+}
+
+#filterBtn{
+    text-align: center;
+    padding:  0.7em 1em;
+}
+
+#filterBtn:hover{
+    text-decoration: underline;
 }
 
 .layoutTheme {
@@ -136,14 +178,8 @@ header {
 
 }
 
-.sidenav {
-    background-color: rgba(13, 10, 175, 0.87);
-    padding: 2em;
-    margin: 1em 0 1em 2em;
-    color: rgb(248, 255, 249);
-    height: auto;
-    font-family: 'Roboto Mono', monospace;
-}
+
+
 
 
 .price {
@@ -186,27 +222,29 @@ header {
 
 }
 
-.footermenu {
-    background-color: rgba(0, 0, 0, 0.671);
+.footer{
+    background-color: rgb(36, 31, 31);
 }
 
-.footersection {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 24px;
+.footerArea {
+    font-weight: bold;
+    font-size: 19px;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1em;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5em;
     padding: 1rem;
     text-align: center;
-    font-size: 18px;
+
 }
 
 
-.footermenulist {
-    font-family: 'Baskervville', serif;
-    color: rgb(202, 198, 197);
-    font-size: 20px
+.footerListItem li a {
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    color: rgb(175, 166, 163);
+    font-size: 17px;
 }
 
 

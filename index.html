@@ -22,21 +22,19 @@
         width="200px"></a>
 
     <!-- Site logo, replace with your own -->
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li><i class="fab fa-airbnb"></i></li>
-        <li class="main-nav-list-items"><a href="#">Home</a></li>
-        <li class="main-nav-list-items"><a href="#">Products</a></li>
-        <li class="main-nav-list-items"><a href="#">Login</a></li>
-        <li class="main-nav-list-items"><a href="#">About Us</a></li>
-        <li class="main-nav-list-items"><button><span class="material-icons iconfav">favorite_border</span>
-           Wishlist</button> </li>
+    <div class="nav">
+      <ul class="navList">
+        <li class="navListItems"><button><span class="material-icons iconfav">favorite_border</span>
+            Wishlist</button> </li>
 
-        <li class="main-nav-list-items"><button><span class="material-icons iconcart">shopping_cart</span>My
+        <li class="navListItems"><button><span class="material-icons iconcart">shopping_cart</span>My
             cart</button></li>
-
+        <li class="navListItems"><a href="#">Products</a></li>
+        <li class="navListItems"><a href="#">Login</a></li>
+        <li class="navListItems"><a href="#">About Us</a></li>
+        <li class="navListItems"><a href="#">Home</a></li>
       </ul>
-    </nav>
+    </div>
 
     <!--<button type="button">
       <span class="material-icons">menu</span>
@@ -59,54 +57,74 @@
     </nav>-->
 
     <!-- Search the site -->
-    <form class="search">
-      <label>Search Products
-        <input type="search" name="searchbar" id="find">
+    <form class="searchbar">
+      <label>Find Your Products
+        <input type="search" name="searchbar" id="search">
       </label>
-      <button type="button"><span class="material-icons">search</span></button>
+      <button type="button" id="searchBtn"><span class="material-icons">search</span></button>
     </form>
 
   </header>
 
   <main>
-    <!--<h1 style="text-align: center;"><label id="headingH1"></label>Displaying products</h1>-->
-    <section class="sortMenu">
-      <ul class="sortOptionsList">
-        <li class="sortOptionsListItem">
-          <h1 style=" font-family: 'Roboto Mono', monospace;">Sort By</h1>
+    <section class="sortMenuBar">
+      <ul class="sortList">
+        <li class="sortListItem">
+          Sort By
         </li>
-        <li class="sortOptionsListItem"><button type="button" class="sortOptionsBtn" id="PriceLowToHigh">Price Low to
-            High</button></li>
-        <li class="sortOptionsListItem"><button type="button" class="sortOptionsBtn" id="PriceHighToLow">Price High to
+        <li class="sortListItem"><button type="button" class="sortBtn" id="PriceHighToLow">Price High to
             Low</button></li>
-        <li class="sortOptionsListItem"><button type="button" class="sortOptionsBtn"
-            id="availability">Availability</button></li>
-        <li class="sortOptionsListItem"><button type="button" class="sortOptionsBtn" id="topRated">Top Rated</button>
+        <li class="sortListItem"><button type="button" class="sortBtn" id="PriceLowToHigh">Price Low to
+            High</button></li>
+        <li class="sortListItem"><button type="button" class="sortBtn" id="topRated">Top Rated</button>
         </li>
-        <li class="sortOptionsListItem"><button type="button" class="sortOptionsBtn" id="onSale">On Sale!</button></li>
-        <li class="sortOptionsListItem"><button type="button" class="sortOptionsBtn" id="filter">Filter</button></li>
+        <li class="sortListItem"><button type="button" class="sortBtn" id="productsOnSale">Products On Sale</button>
+        </li>
+        <li class="sortListItem"><button type="button" class="sortBtn" id="availabileProducts">Availabile
+            Products</button>
+        </li>
+        <li class="sortListItem"><button type="button" class="sortBtn" id="filter">Filter</button></li>
       </ul>
     </section>
-    <h2>Displaying Products: <small id="numResults"></small></h2>
+
+   <div>
+    <p class="display">Displaying Products: <small id="numResults"></small></p>
+   </div>
+    
     <section class="layoutTheme">
       <!-- Filtering product form -->
-      <article class="sidenav" id="filtermenu">
+      <article class="leftNavBar" id="filter">
         <form>
-          <h1 style="font-weight:bold;  font-family: 'Roboto Mono', monospace;">Filter By</h1>
+          <fieldset>
+            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Price
+            </legend>
+            <input type="text" name="PriceSearch" id="PriceFilter">
+          </fieldset>
           <hr>
           <fieldset>
-            <legend>Colour</legend>
+            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Category
+            </legend>
+            <ul>
+              <li><input type="radio" name="category" value="casual" id="sports">Casual</input></li>
+              <li><input type="radio" name="category" value="running" id="running">Running</input></li>
+              <li><input type="radio" name="category" value="sports" id="sports">Sports</input></li>
+            </ul>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Colour
+            </legend>
             <ul>
               <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
               <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
               <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
               <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
             </ul>
           </fieldset>
           <hr>
           <fieldset>
-            <legend>Sizes</legend>
+            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Sizes
+            </legend>
             <ol>
               <li><input type="checkbox" name="size" value="6" id="uksix"> <label for="6">UK 6</label></li>
               <li><input type="checkbox" name="size" value="7" id="ukseven"> <label for="7">UK 7</label></li>
@@ -117,7 +135,8 @@
           </fieldset>
           <hr>
           <fieldset>
-            <legend>Ratings (at least)</legend>
+            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Ratings
+              (at least)</legend>
             <ol>
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour">
@@ -155,52 +174,59 @@
           </fieldset>
           <hr>
           <fieldset>
-            <legend>Discount</legend>
+            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Discount
+            </legend>
             <ul>
-              <li><input type="checkbox" name="discount" value="black" id="discount_ten"> <label for="ten">10%</label>
+              <li>
+                <input type="radio" name="discount" value="10" id="tenpercent">10%</input>
               </li>
-              <li><input type="checkbox" name="discount" value="white" id="discount_fifteen"> <label
-                  for="fifteen">15%</label></li>
-              <li><input type="checkbox" name="discount" value="grey" id="discount_twenty"> <label
-                  for="twenty">20%</label></li>
+              <li>
+                <input type="radio" name="discount" value="15" id="fifteenpercent">15%</input>
+              </li>
+              <li>
+                <input type="radio" name="discount" value="20" id="twentypercent">20%</input>
+              </li>
             </ul>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Brand
+            </legend>
+            <ul>
+              <li><input type="radio" name="brand" value="nike" id="nike">Nike</input></li>
+              <li><input type="radio" name="brand" value="adidas" id="adidas">Adidas</input></li>
+              <li><input type="radio" name="brand" value="reebok" id="reebok">Reebok</input></li>
+              <li><input type="radio" name="brand" value="puma" id="puma">puma</input></li>
+            </ul>
+            <hr>
+            <button type="button" id="filterBtn">Click here for Filters</button>
+
           </fieldset>
         </form>
       </article>
       <article class="products" id="app"> </article>
     </section>
-    <footer class="footermenu">
-      <section class="footersection">
-        <article class="footerarticle">
-          <h1>About</h1>
-          <ul class="footermenulist">
-            <li>contact us</li>
-            <li>About us</li>
-            <li>Careers</li>
-            <li>Press</li>
-          </ul>
-        </article>
-        <article class="footerarticle">
+    <footer class="footer">
+      <section class="footerArea">
+
+        <article class="footerList">
           <h1>Help</h1>
-          <ul class="footermenulist">
-            <li>Payment</li>
-            <li>Shipping</li>
-            <li>Cancellation</li>
-            <li>FAQ</li>
+          <ul class="footerListItem">
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Payment Method</a></li>
           </ul>
         </article>
-        <article class="footerarticle">
+        <article class="footerList">
           <h1>Policy</h1>
-          <ul class="footermenulist">
-            <li>Return Policy</li>
-            <li>Terms of Use</li>
-            <li>Security</li>
-            <li>Privacy</li>
+          <ul class="footerListItem">
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility Policy</a></li>
           </ul>
         </article>
-        <article class="footerarticle">
+        <article class="footerList">
           <h1>Social</h1>
-          <ul class="footermenulist">
+          <ul class="footerListItem">
             <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
             <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
             <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
