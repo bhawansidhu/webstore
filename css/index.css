@@ -1,0 +1,234 @@
+header {
+    background-color:lightslategray;
+    width: 100%;
+    height: 30vh;
+}
+
+.logo {
+     text-align: center;
+}
+.main-nav{
+    display: block;
+    text-align: right;
+}
+
+.main-nav-list {
+    display: inline-block;
+    list-style-type: none;
+    margin-bottom: 1em;
+    padding: 0;
+    overflow: hidden;
+  /*  background-color: rgba(13, 10, 175, 0.87); */
+}
+
+/*.main-nav-list-items {
+    float: left;
+} */
+
+.main-nav-list-items a {
+   
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.search {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 26px;
+}
+
+#find {
+    font-family: 'Baskervville', serif;
+    text-align: center;
+    margin-left: 4em;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(13, 10, 175, 0.87);
+    color: white;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; 
+}
+
+#find:focus {
+    width: 450px;
+}
+
+.sortOptionsList {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.sortOptionsList .sortOptionsListItem {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.sortOptionsBtn {
+    background-color: greenyellow;
+    border-radius: 14px;
+    color: black;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.2s;
+    /* Safari */
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.sortOptionsBtn:hover {
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgba(13, 10, 175, 0.87);
+    color: white;
+    border: 2px solid rgb(226, 223, 223);
+}
+
+.layoutTheme {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    grid-row-gap: 0.6rem;
+    grid-column-gap: 0.6rem;
+}
+
+.productsCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, .87);
+}
+
+.ProductCardName {
+    color: rgba(0, 0, 0, .87);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-top: 1rem;
+    padding: 0.2rem 1rem;
+}
+
+.productCardList {
+    color: rgba(0, 0, 0, .87);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+}
+
+.sidenav {
+    background-color: rgba(13, 10, 175, 0.87);
+    padding: 2em;
+    margin: 1em 0 1em 2em;
+    color: rgb(248, 255, 249);
+    height: auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.price {
+    color: red;
+    font-size: 22px;
+}
+
+.productsCard .productCardButton {
+    border: none;
+    outline: 0;
+    padding: 0.4rem;
+    color: rgb(250, 249, 249);
+    background-color: rgba(0, 0, 0, .87);
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.heartBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+    opacity: 0.7;
+    color: rgb(63, 46, 46);
+}
+
+.heartBtn:hover {
+    opacity: 1;
+    color: rgb(216, 51, 51);
+
+}
+
+.footermenu {
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.footersection {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    padding: 1rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.footermenulist {
+    font-family: 'Baskervville', serif;
+    color: rgb(202, 198, 197);
+    font-size: 20px
+}
+
+
+
+
+/* For Mobiles */ 
+@media screen and (max-width:320px) {
+    
+  
+  }
+  
+  
+  /* For Tablets */
+  
+  @media screen and (max-width:927px) and (min-width:320px){
+      
+     
+  }
+  
+  /* For Desktop */
+  @media screen and (max-width:1128px) and (min-width:928px){
+      
+      
+  }
+  
