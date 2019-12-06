@@ -87,14 +87,15 @@
       </ul>
     </section>
 
-   <div>
-    <p class="display">Displaying Products: <small id="numResults"></small></p>
-   </div>
-    
+    <div>
+      <p class="display">Displaying Products: <small id="numResults"></small></p>
+    </div>
+
     <section class="layoutTheme">
       <!-- Filtering product form -->
       <article class="leftNavBar" id="filter">
         <form>
+          
           <fieldset>
             <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Price
             </legend>
@@ -102,14 +103,16 @@
           </fieldset>
           <hr>
           <fieldset>
-            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Category
-            </legend>
-            <ul>
-              <li><input type="radio" name="category" value="casual" id="sports">Casual</input></li>
-              <li><input type="radio" name="category" value="running" id="running">Running</input></li>
-              <li><input type="radio" name="category" value="sports" id="sports">Sports</input></li>
-            </ul>
-          </fieldset>
+              <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Womens
+                Cloths
+              </legend>
+              <ul>
+                <li><input type="radio" name="brand" value="shirt" id="shirt">Shirts</input></li>
+                <li><input type="radio" name="brand" value="jeans" id="jeans">Jeans</input></li>
+                <li><input type="radio" name="brand" value="shoes" id="shoes">Shoes</input></li>
+                <li><input type="radio" name="brand" value="heels" id="heels">Heels</input></li>
+              </ul>
+            </fieldset>
           <hr>
           <fieldset>
             <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Colour
@@ -190,16 +193,17 @@
           </fieldset>
           <hr>
           <fieldset>
-            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Brand
+            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Category
             </legend>
             <ul>
-              <li><input type="radio" name="brand" value="nike" id="nike">Nike</input></li>
-              <li><input type="radio" name="brand" value="adidas" id="adidas">Adidas</input></li>
-              <li><input type="radio" name="brand" value="reebok" id="reebok">Reebok</input></li>
-              <li><input type="radio" name="brand" value="puma" id="puma">puma</input></li>
+              <li><input type="radio" name="category" value="casual" id="sports">Casual</input></li>
+              <li><input type="radio" name="category" value="Formal" id="formal">Formal</input></li>
+
             </ul>
-            <hr>
-            <button type="button" id="filterBtn">Click here for Filters</button>
+          </fieldset>
+
+          <hr>
+          <button type="button" id="filterBtn">Click here for Filters</button>
 
           </fieldset>
         </form>

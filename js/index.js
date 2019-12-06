@@ -5,6 +5,7 @@ const shirt1 = {
     productOnSale: true,
     discount: 20,
     productCode: 2501,
+    sizes: [6,7, 8, 9],
     brand: `Zara`,
     category: `Formal`,
     price: `90`,
@@ -19,10 +20,11 @@ const shirt2 = {
     productOnSale: true,
     discount: 20,
     productCode: 2502,
+    sizes: [6,7, 8, 9],
     brand: `Zara`,
     category: `Formal`,
     price: `90`,
-    rating: 4.3,
+    rating: 4.4,
     
 };
   
@@ -30,8 +32,254 @@ const shirt3 = {
     name: `white Shirt`,
     imageUrl: `img/white shirt.jpg`,
     colors: [`white`, `blue`, `balck` , `red`],
+    productOnSale: false,
+    productCode: 2503,
+    sizes: [6,7, 8, 9],
+    discount: 20,
+    brand: `Zara`,
+    category: `causal`,
+    price: `90`,
+    rating: 4.3,
+    
+};
+  
+const shirt4 = {
+    name: `Black Shirt`,
+    imageUrl: `img/black shirt.jpg`,
+    colors: [`white`, `blue`, `balck` , `red`],
+    productOnSale: false,
+    productCode: 2504,
+    sizes: [7, 8, 9],
+    discount: 20,
+    brand: `Zara`,
+    category: `Formal`,
+    price: `100`,
+    rating: 4.4,
+    
+};
+
+const shirt = [
+  shirt1,
+  shirt2,
+  shirt3,
+  shirt4
+  
+];
+
+  
+const jeans1 = {
+    name: `black jeans`,
+    imageUrl: `img/black jeans.jpg`,
+    colors: [`white`, `blue`, `balck` ],
+    productOnSale: true,
+    productCode: 2505,
+    sizes: [6,7, 9],
+    discount: 10,
+    brand: `Zara`,
+    category: `causal`,
+    price: `150`,
+    rating: 4.5,
+    
+};
+  
+const jeans2= {
+    name: `blue jeans`,
+    imageUrl: `img/blue jeans.jpg`,
+    colors: [`white`, `blue`, `balck`],
+    productOnSale: false,
+    productCode: 2506,
+    sizes: [6,7, 9],
+    discount: 10,
+    brand: `Zara`,
+    category: `causal`,
+    price: `130`,
+    rating: 4.3,
+    
+};
+  
+const jeans3 = {
+    name: `skinny jeans`,
+    imageUrl: `img/skinny jeans.jpg`,
+    colors: [`white`, `blue`, `balck`],
+    productOnSale: true,
+    productCode: 2507,
+    sizes: [6,7, 8,],
+    discount: 10,
+    brand: `Zara`,
+    category: `causal`,
+    price: `120`,
+    rating: 4.5,
+    
+};
+  
+const jeans4 = {
+    name: `white jeans`,
+    imageUrl: `img/white jeans.jpg`,
+    colors: [`white`, `blue`, `balck`],
+    productOnSale: false,
+    productCode: 2508,
+    sizes: [7, 8, 9],
+    discount: 10,
+    brand: `Zara`,
+    category: `formal`,
+    price: `120`,
+    rating: 4.3,
+    
+};
+
+const jeans = [
+  jeans1,
+  jeans2,
+  jeans3,
+  jeans4
+  
+];
+  
+const shoes1 = {
+    name: `Ankle shoes`,
+    imageUrl: `img/ankle shoes.jpg`,
+    colors: [`white`, `blue`, `balck` , `red`],
+    productOnSale: true,
+    productCode: 2509,
+    sizes: [6,7, 8, 9],
+    discount: 20,
+    brand: `Zara`,
+    category: `causal`,
+    price: `200`,
+    rating: 4.3,
+    
+};
+  
+const shoes2 = {
+    name: `brown shoes`,
+    imageUrl: `img/brown shoes.jpg`,
+    colors: [`white`, `blue`, `balck` , `red`],
+    productOnSale: true,
+    productCode: 2510,
+    sizes: [6,7, 8,],
+    discount: 20,
+    brand: `Zara`,
+    category: `Formal`,
+    price: `190`,
+    rating: 4.4,
+    
+};
+  
+const shoes3 = {
+    name: `white shoes`,
+    imageUrl: `img/white shoes.jpg`,
+    colors: [`white`, `blue`, `balck`],
+    productOnSale: false,
+    productCode: 2511,
+    sizes: [6,7, 8, 9],
+    discount: 20,
+    brand: `Zara`,
+    category: `causal`,
+    price: `290`,
+    rating: 4.3,
+    
+};
+  
+const shoes4 = {
+    name: `snow shoes`,
+    imageUrl: `img/snow shoes.jpg`,
+    colors: [`white`, `blue`, `balck`],
+    productOnSale: true,
+    productCode: 2512,
+    sizes: [6,7, 8, 9],
+    discount: 20,
+    brand: `Zara`,
+    category: `causal`,
+    price: `180`,
+    rating: 4.4,
+    
+};
+
+const shoes = [
+  shoes1,
+  shoes2,
+  shoes3,
+  shoes4
+  
+];
+  
+  
+const heels1 = {
+    name: `Black heels`,
+    imageUrl: `img/black heels.jpg`,
+    colors: [`white`, `blue`, `balck` , `red`],
+    productOnSale: true,
+    productCode: 2513,
+    sizes: [6,7, 8, 9],
+    discount: 15,
+    brand: `Zara`,
+    category: `Formal`,
+    price: `390`,
+    rating: 4.4,
+    
+};
+  
+const heels2 = {
+    name: `red heels`,
+    imageUrl: `img/red heels.jpg`,
+    colors: [`white`, `blue`, `balck` , `red`],
+    productOnSale: false,
+    productCode: 2514,
+    sizes: [6,7, 8, 9],
+    discount: 15,
+    brand: `Zara`,
+    category: `Formal`,
+    price: `160`,
+    rating: 4.5,
+    
+};
+  
+const heels3 = {
+    name: `white heels`,
+    imageUrl: `img/white heels.jpg`,
+    colors: [`white`, `blue`, `balck` , `red`],
+    productOnSale: true,
+    productCode: 2515,
+    sizes: [6,7, 8, 9],
+    discount: 15,
+    brand: `Zara`,
+    category: `causal`,
+    price: `190`,
+    rating: 4.4,
+    
+};
+  
+const heels4 = {
+    name: `Blue heels`,
+    imageUrl: `img/blue heels.jpg`,
+    colors: [`white`, `blue`, `balck` , `red`],
+    productOnSale: true,
+    productCode: 2516,
+    sizes: [6,7, 8, 9],
+    discount: 15,
+    brand: `Zara`,
+    category: `Formal`,
+    price: `150`,
+    rating: 4.3,
+    
+};
+
+const heels = [
+  heels1,
+  heels2,
+  heels3,
+  heels4
+  
+];
+  
+const shirt1 = {
+    name: `Blue Shirt`,
+    imageUrl: `img/blue shirt.jpg`,
+    colors: [`white`, `blue`, `balck` , `red`],
     productOnSale: true,
     productCode: 2501,
+    sizes: [6,7, 8, 9],
+    discount: 20,
     brand: `Zara`,
     category: `Formal`,
     price: `90`,
@@ -45,6 +293,8 @@ const shirt1 = {
     colors: [`white`, `blue`, `balck` , `red`],
     productOnSale: true,
     productCode: 2501,
+    sizes: [6,7, 8, 9],
+    discount: 20,
     brand: `Zara`,
     category: `Formal`,
     price: `90`,
@@ -58,6 +308,8 @@ const shirt1 = {
     colors: [`white`, `blue`, `balck` , `red`],
     productOnSale: true,
     productCode: 2501,
+    sizes: [6,7, 8, 9],
+    discount: 20,
     brand: `Zara`,
     category: `Formal`,
     price: `90`,
@@ -71,188 +323,8 @@ const shirt1 = {
     colors: [`white`, `blue`, `balck` , `red`],
     productOnSale: true,
     productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
-    brand: `Zara`,
-    category: `Formal`,
-    price: `90`,
-    rating: 4.3,
-    
-};
-  
-const shirt1 = {
-    name: `Blue Shirt`,
-    imageUrl: `img/blue shirt.jpg`,
-    colors: [`white`, `blue`, `balck` , `red`],
-    productOnSale: true,
-    productCode: 2501,
+    sizes: [6,7, 8, 9],
+    discount: 20,
     brand: `Zara`,
     category: `Formal`,
     price: `90`,
