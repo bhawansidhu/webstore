@@ -144,11 +144,11 @@ header {
 
 .products {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 1rem;
     padding: 2rem;
-    grid-row-gap: 0.6rem;
-    grid-column-gap: 0.6rem;
+    grid-row-gap: 0.9rem;
+    grid-column-gap: 0.7rem;
 }
 
 .productsCard {
