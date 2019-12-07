@@ -79,7 +79,7 @@ const dress6 = {
   name: `blue jeans`,
   imageUrl: `img/blue jeans.jpg`,
   colors: [`white`, `blue`, `balck`],
-  productsOnSale: true,
+  productsOnSale: false,
   stock: 6,
   sizes: [`XS`,`S`,`M`,`L`,`XL`],
   discount: `10%`,
@@ -282,7 +282,7 @@ const footWear7 = {
   name: `white heels`,
   imageUrl: `img/white heel.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productsOnSale: true,
+  productsOnSale: false,
   stock: 12,
   sizes: [`XS`,`S`,`M`,`L`,`XL`],
   discount: `15%`,
@@ -297,7 +297,7 @@ const footWear8 = {
   name: `Blue heels`,
   imageUrl: `img/blue heels.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productsOnSale: true,
+  productsOnSale: false,
   stock: 10,
   sizes: [`XS`,`S`,`M`,`L`,`XL`],
   discount: `15%`,
@@ -315,7 +315,7 @@ function getDataAsHtml(webStore ) {
   let heartButton=`<button type="button" class="heartBtn" data-code="${webStore.productCode}" id="heartBtn"><span class="material-icons">favorite</span></button>`;
   let productsOnSale='';
   let outOfStock=``;
-  if(webStore .productsOnSale==true && webStore .stock > 0){
+  if( webStore.productsOnSale ==true){
     productsOnSale=`<small class="productsOnSaleAdd">product On Sale!<br>Hurry up !!!</small>`;
     cartBtn=`<button type="button" class="productCartBut"  data-code="${webStore.productCode}" id="addtocart"><span class="material-icons">add_shopping_cart</span> Add to Cart</button> `;
   
@@ -323,7 +323,7 @@ function getDataAsHtml(webStore ) {
   else{
     productsOnSale=`<small class="outOfStock">Out of stock</small>`
   }
-
+  
   return `
     <section class="productsList"> 
     <img class="productImage" src="${webStore.imageUrl}"  style="width:100%;height:230px;" alt="${webStore.name}">
@@ -347,6 +347,7 @@ document.getElementById(`productId`).innerHTML = webStore
   .map(getDataAsHtml)
   .join("\n");
 
+  
   //search functionality
 function LoadProductsByName(n){
   n.preventDefault();
@@ -416,6 +417,8 @@ document.getElementById(`PriceLowToHigh`).addEventListener("click", LoadProducts
 document.getElementById(`topRated`).addEventListener("click", LoadProductsByRatings);
 document.getElementById(`productsOnSale`).addEventListener("click", LoadProductsOnSale);
 document.getElementById('productId').addEventListener("click", handleClicksofBtns);
+
+
 
 
 getDataAsHtml(webStore);
