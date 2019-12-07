@@ -309,18 +309,8 @@ const footWear8 = {
 
 const footWear = [footWear1, footWear2, footWear3, footWear4, footWear5, footWear6, footWear7, footWear8];
 
-
-
-
 const webStore = dress.concat(footWear);
-
-
-//functions
-
-
-
-
-function getShoesAsHtml(webStore ) {
+function getDataAsHtml(webStore ) {
   let cartBtn=``;
   let heartButton=`<button type="button" class="heartBtn" data-code="${webStore.productCode}" id="heartBtn"><span class="material-icons">favorite</span></button>`;
   let productsOnSale='';
@@ -341,27 +331,29 @@ function getShoesAsHtml(webStore ) {
     ${productsOnSale}
     <h1 class="ProductName"><strong>${webStore.name}</strong></h1>
         <ul class="productListItems">
-          <li class="productCategory"><h3>${webStore.category}</h3></li>
+         
           <li class="productPrice"><h3>Price: $${webStore.price}</h3></li>
-          <li class="productRating"><p> rating: ${webStore.rating}<p></li>
           <li class="productDiscount"><p> Discount: ${webStore.discount}<p></li>
+          <li class="productRating"><p> rating: ${webStore.rating}<p></li>
+          <li class="productCategory"><h3>${webStore.category}</h3></li>
+          
       
         </ul>
         ${cartBtn}
         </section>`;
 }
 
-document.getElementById(`app`).innerHTML = webStore 
-  .map(getShoesAsHtml)
+document.getElementById(`productId`).innerHTML = webStore 
+  .map(getDataAsHtml)
   .join("\n");
 
   //search functionality
-function LoadProductsByName(e){
-  e.preventDefault();
+function LoadProductsByName(n){
+  n.preventDefault();
   const search=document.getElementById('search').value;
   const lowerCase=search.trim().toLowerCase();
   const searchResultsArray=webStore .filter(p=> p.name.toLowerCase().includes(lowerCase));
-  renderProducts(searchResultsArray);
+  sortByProducts(searchResultsArray);
 }
 
 //top rated function
@@ -370,7 +362,7 @@ function LoadProductsByRatings() {
   const ratingArray = webStore
     .slice(0)
     .sort((x, y) => (x.rating < y.rating ? 1 : -1));
-  renderProducts(ratingArray);
+  sortByProducts(ratingArray);
 }
 
 
@@ -381,7 +373,7 @@ function LoadProductsPriceLowToHigh() {
   const PriceLowToHighArray = webStore
     .slice(0)
     .sort((x, y) => (x.price > y.price ? 1 : -1));
-  renderProducts(PriceLowToHighArray);
+  sortByProducts(PriceLowToHighArray);
 }
 
 
@@ -390,7 +382,7 @@ function LoadProductsPriceHighTolow() {
   const PriceHighToLowArray = webStore 
     .slice(0)                              // start from 1
     .sort((x, y) => (x.price < y.price ? 1 : -1));
-  renderProducts(PriceHighToLowArray);
+  sortByProducts(PriceHighToLowArray);
 }
 
 
@@ -400,24 +392,17 @@ function LoadProductsPriceHighTolow() {
 function LoadProductsOnSale(){
   
   const productsOnSaleArray= webStore.slice(0).filter(p => p.productsOnSale == true).filter(p=>p.stock>0);
-  renderProducts(productsOnSaleArray);
+  sortByProducts(productsOnSaleArray);
 }
 
 
-function renderProducts(array) {
-  document.getElementById(`app`).innerHTML = array.map(getShoesAsHtml).join("\n");
+function sortByProducts(array) {
+  document.getElementById(`productId`).innerHTML = array.map(getDataAsHtml).join("\n");
   let result = 'Products';
   if (array.length == 1) {
     result = 'Products'
-    document.getElementById('numResults').innerHTML = `(${array.length} ${result})`;
-  }
- if(array.length==0){
-  result = 'Products'
-    document.getElementById('numResults').innerHTML = `(${array.length} ${result})`;
-    document.getElementById(`app`).innerHTML=`<p>NO RESULT FOUND!</p>`
- }
- 
-} 
+    document.getElementById('resultInNumber').innerHTML = `(${array.length} ${result})`;
+  }} 
 
 
 
@@ -430,9 +415,9 @@ document.getElementById(`PriceHighToLow`).addEventListener("click", LoadProducts
 document.getElementById(`PriceLowToHigh`).addEventListener("click", LoadProductsPriceLowToHigh);
 document.getElementById(`topRated`).addEventListener("click", LoadProductsByRatings);
 document.getElementById(`productsOnSale`).addEventListener("click", LoadProductsOnSale);
-document.getElementById('app').addEventListener("click", handleClicksofBtns);
+document.getElementById('productId').addEventListener("click", handleClicksofBtns);
 
 
-getShoesAsHtml(webStore);
+getDataAsHtml(webStore);
 
 });
