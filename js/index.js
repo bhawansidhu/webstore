@@ -1,73 +1,73 @@
 const dress1 = {
+  productID: 2501,
   name: `Blue Shirt`,
   imageUrl: `img/blue shirt.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: true,
-  discount: 20,
-  productCode: 2501,
-  sizes: [6, 7, 8, 9],
-  brand: `Zara`,
+  productsOnSale: true,
+  discount: `20%`,
+  stock: 6,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
   category: `Formal`,
-  price: `90`,
+  price: `135`,
   rating: 4.3,
 
 };
 
 const dress2 = {
+  productID: 2502,
   name: `Red Shirt`,
   imageUrl: `img/red shirt.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: true,
-  discount: 20,
-  productCode: 2502,
-  sizes: [6, 7, 8, 9],
-  brand: `Zara`,
+  productsOnSale: true,
+  discount: `20%`,
+  stock: 4,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
   category: `Formal`,
-  price: `90`,
+  price: `147`,
   rating: 4.4,
 
 };
 
 const dress3 = {
+  productID: 2503,
   name: `white Shirt`,
   imageUrl: `img/white shirt.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: false,
-  productCode: 2503,
-  sizes: [6, 7, 8, 9],
-  discount: 20,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 30,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `20%`,
   category: `causal`,
-  price: `90`,
+  price: `168`,
   rating: 4.3,
 
 };
 
 const dress4 = {
+  productID: 2504,
   name: `Black Shirt`,
   imageUrl: `img/black shirt.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: false,
-  productCode: 2504,
-  sizes: [7, 8, 9],
-  discount: 20,
-  brand: `Zara`,
+  productsOnSale: false,
+  stock: 12,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `20%`,
   category: `Formal`,
-  price: `100`,
+  price: `124`,
   rating: 4.4,
 
 };
 
 
 const dress5 = {
+  productID: 2505,
   name: `black jeans`,
   imageUrl: `img/black jeans.jpg`,
   colors: [`white`, `blue`, `balck`],
-  productOnSale: true,
-  productCode: 2505,
-  sizes: [6, 7, 9],
-  discount: 10,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 19,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `10%`,
   category: `causal`,
   price: `150`,
   rating: 4.5,
@@ -75,14 +75,14 @@ const dress5 = {
 };
 
 const dress6 = {
+  productID: 2506,
   name: `blue jeans`,
   imageUrl: `img/blue jeans.jpg`,
   colors: [`white`, `blue`, `balck`],
-  productOnSale: false,
-  productCode: 2506,
-  sizes: [6, 7, 9],
-  discount: 10,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 6,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `10%`,
   category: `causal`,
   price: `130`,
   rating: 4.3,
@@ -90,14 +90,14 @@ const dress6 = {
 };
 
 const dress7 = {
+  productID: 2507,
   name: `skinny jeans`,
   imageUrl: `img/skinny jeans.jpg`,
   colors: [`white`, `blue`, `balck`],
-  productOnSale: true,
-  productCode: 2507,
-  sizes: [6, 7, 8,],
-  discount: 10,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 2,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `10%`,
   category: `causal`,
   price: `120`,
   rating: 4.5,
@@ -105,14 +105,14 @@ const dress7 = {
 };
 
 const dress8 = {
+  productID: 2508,
   name: `white jeans`,
   imageUrl: `img/white jeans.jpg`,
   colors: [`white`, `blue`, `balck`],
-  productOnSale: false,
-  productCode: 2508,
-  sizes: [7, 8, 9],
-  discount: 10,
-  brand: `Zara`,
+  productsOnSale: false,
+  stock: 20,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `10%`,
   category: `formal`,
   price: `120`,
   rating: 4.3,
@@ -120,14 +120,14 @@ const dress8 = {
 };
 
 const dress9 = {
+  productID: 2509,
   name: `Blue Skirt`,
   imageUrl: `img/blueskirt.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: true,
-  productCode: 2517,
-  sizes: [6, 7, 8, 9],
-  discount: 10,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 22,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `10%`,
   category: `Formal`,
   price: `350`,
   rating: 4.4,
@@ -135,14 +135,14 @@ const dress9 = {
 };
 
 const dress10 = {
+  productID: 2510,
   name: `red Skirt`,
   imageUrl: `img/red skirt.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: false,
-  productCode: 2518,
-  sizes: [6, 7, 8, 9],
-  discount: 10,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 13,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `10%`,
   category: `causal`,
   price: `355`,
   rating: 4.5,
@@ -150,14 +150,14 @@ const dress10 = {
 };
 
 const dress11 = {
+  productID: 2511,
   name: `black Skirt`,
   imageUrl: `img/black skirt.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: true,
-  productCode: 2519,
-  sizes: [6, 7, 9],
-  discount: 10,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 10,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `10%`,
   category: `Formal`,
   price: `420`,
   rating: 4.3,
@@ -165,14 +165,14 @@ const dress11 = {
 };
 
 const dress12 = {
+  productID: 2512,
   name: `white Skirt`,
   imageUrl: `img/white skirt.jpeg`,
   colors: [`white`, `blue`, `red`],
-  productOnSale: false,
-  productCode: 2520,
-  sizes: [6, 7, 8, 9],
-  discount: 20,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 12,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `20%`,
   category: `Formal`,
   price: `348`,
   rating: 4.4,
@@ -187,14 +187,14 @@ const dress= [ dress1, dress2,  dress3, dress4, dress5, dress6, dress7, dress8, 
 
 
 const footWear1 = {
+  productID: 2513,
   name: `Ankle shoes`,
   imageUrl: `img/ankle shoes.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: true,
-  productCode: 2509,
-  sizes: [6, 7, 8, 9],
-  discount: 20,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 12,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount:`20%`,
   category: `causal`,
   price: `200`,
   rating: 4.3,
@@ -202,14 +202,14 @@ const footWear1 = {
 };
 
 const footWear2 = {
+  productID: 2514,
   name: `brown shoes`,
   imageUrl: `img/brown shoes.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: true,
-  productCode: 2510,
-  sizes: [6, 7, 8,],
-  discount: 20,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 12,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `20%`,
   category: `Formal`,
   price: `190`,
   rating: 4.4,
@@ -217,14 +217,14 @@ const footWear2 = {
 };
 
 const footWear3 = {
+  productID: 2515,
   name: `white shoes`,
   imageUrl: `img/white shoes.jpg`,
   colors: [`white`, `blue`, `balck`],
-  productOnSale: false,
-  productCode: 2511,
-  sizes: [6, 7, 8, 9],
-  discount: 20,
-  brand: `Zara`,
+  productsOnSale: false,
+  stock: 12,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `20%`,
   category: `causal`,
   price: `290`,
   rating: 4.3,
@@ -232,14 +232,14 @@ const footWear3 = {
 };
 
 const footWear4 = {
+  productID: 2516,
   name: `snow shoes`,
   imageUrl: `img/snow shoes.jpg`,
   colors: [`white`, `blue`, `balck`],
-  productOnSale: true,
-  productCode: 2512,
-  sizes: [6, 7, 8, 9],
-  discount: 20,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 12,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `20%`,
   category: `causal`,
   price: `180`,
   rating: 4.4,
@@ -248,14 +248,14 @@ const footWear4 = {
 
 
 const footWear5 = {
+  productID: 2517,
   name: `Black heels`,
   imageUrl: `img/black heels.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: true,
-  productCode: 2513,
-  sizes: [6, 7, 8, 9],
-  discount: 15,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 20,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `15%`,
   category: `Formal`,
   price: `390`,
   rating: 4.4,
@@ -263,14 +263,14 @@ const footWear5 = {
 };
 
 const footWear6 = {
+  productID: 2518,
   name: `red heels`,
   imageUrl: `img/red heels.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: false,
-  productCode: 2514,
-  sizes: [6, 7, 8, 9],
-  discount: 15,
-  brand: `Zara`,
+  productsOnSale: false,
+  stock: 12,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `15%`,
   category: `Formal`,
   price: `160`,
   rating: 4.5,
@@ -278,14 +278,14 @@ const footWear6 = {
 };
 
 const footWear7 = {
+  productID: 2519,
   name: `white heels`,
   imageUrl: `img/white heel.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: true,
-  productCode: 2515,
-  sizes: [6, 7, 8, 9],
-  discount: 15,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 12,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `15%`,
   category: `causal`,
   price: `190`,
   rating: 4.4,
@@ -293,14 +293,14 @@ const footWear7 = {
 };
 
 const footWear8 = {
+  productID: 2520,
   name: `Blue heels`,
   imageUrl: `img/blue heels.jpg`,
   colors: [`white`, `blue`, `balck`, `red`],
-  productOnSale: true,
-  productCode: 2516,
-  sizes: [6, 7, 8, 9],
-  discount: 15,
-  brand: `Zara`,
+  productsOnSale: true,
+  stock: 10,
+  sizes: [`XS`,`S`,`M`,`L`,`XL`],
+  discount: `15%`,
   category: `Formal`,
   price: `150`,
   rating: 4.3,
@@ -312,270 +312,112 @@ const footWear = [footWear1, footWear2, footWear3, footWear4, footWear5, footWea
 
 
 
-const shoesData = dress.concat(footWear);
+const webStore = dress.concat(footWear);
 
-
-const shoppingCart = [
-  {ID: 101, qty: 1}
-];
-
-const wishlist=[
-  {
-    ID:100, qty:1}
-  ];
 
 //functions
 
 
 
 
-function getShoesAsHtml(shoesData) {
+function getShoesAsHtml(webStore ) {
   let cartBtn=``;
-  let heartButton=`<button type="button" class="heartBtn" data-code="${shoesData.productCode}" id="heartBtn"><span class="material-icons">favorite</span></button>`;
-  let onsale='';
+  let heartButton=`<button type="button" class="heartBtn" data-code="${webStore.productCode}" id="heartBtn"><span class="material-icons">favorite</span></button>`;
+  let productsOnSale='';
   let outOfStock=``;
-  if(shoesData.onSale==true && shoesData.stock > 0){
-    onsale=`<small class="onsale_banner">On Sale!</small>`;
-    cartBtn=`<button type="button" class="productCardButton"  data-code="${shoesData.productCode}" id="addtocart"><span class="material-icons">add_shopping_cart</span> Add to Cart</button> `;
+  if(webStore .productsOnSale==true && webStore .stock > 0){
+    productsOnSale=`<small class="productsOnSaleAdd">product On Sale!<br>Hurry up !!!</small>`;
+    cartBtn=`<button type="button" class="productCartBut"  data-code="${webStore.productCode}" id="addtocart"><span class="material-icons">add_shopping_cart</span> Add to Cart</button> `;
   
   }
   else{
-    onsale=`<small class="outofstock">Out of stock</small>`
+    productsOnSale=`<small class="outOfStock">Out of stock</small>`
   }
 
   return `
-    <section class="productsCard"> 
-    <img class="productCardImg" src="${shoesData.imageUrl}" alt="${shoesData.name}" style="width:100%;height:130px;">
+    <section class="productsList"> 
+    <img class="productImage" src="${webStore.imageUrl}"  style="width:100%;height:230px;" alt="${webStore.name}">
     ${heartButton}
-    ${onsale}
-    <h1 class="ProductCardName"><strong>${shoesData.name}</strong></h1>
-        <ul class="productCardList">
-          <li class="productCardListItem"><h3>${shoesData.category}</h3></li>
-          <li class="productCardListItem"><h3>Price: $${shoesData.price}</h3></li>
-          <li class="productCardListItem"><p>Average rating: ${shoesData.rating}<p></li>
-          <li>${shoesData.discount}</li>
-          <section class="onhoverShow">testing mee</section>
+    ${productsOnSale}
+    <h1 class="ProductName"><strong>${webStore.name}</strong></h1>
+        <ul class="productListItems">
+          <li class="productCategory"><h3>${webStore.category}</h3></li>
+          <li class="productPrice"><h3>Price: $${webStore.price}</h3></li>
+          <li class="productRating"><p> rating: ${webStore.rating}<p></li>
+          <li class="productDiscount"><p> Discount: ${webStore.discount}<p></li>
+      
         </ul>
         ${cartBtn}
         </section>`;
 }
 
-document.getElementById(`app`).innerHTML = shoesData
+document.getElementById(`app`).innerHTML = webStore 
   .map(getShoesAsHtml)
   .join("\n");
 
   //search functionality
 function LoadProductsByName(e){
   e.preventDefault();
-  const search=document.getElementById('find').value;
+  const search=document.getElementById('search').value;
   const lowerCase=search.trim().toLowerCase();
-  const searchResultsArray=shoesData.filter(p=> p.name.toLowerCase().includes(lowerCase));
+  const searchResultsArray=webStore .filter(p=> p.name.toLowerCase().includes(lowerCase));
   renderProducts(searchResultsArray);
 }
 
-//addto cart function
-function handleClicksofBtns(){
-  if (event.target.matches('button.productCardButton')) {
-    const code = parseInt(event.target.dataset.code);
-    addItemToCart(code);
-  }
-
-  if (event.target.closest('button').matches('button.heartBtn')) {
-    const code = parseInt(event.target.closest('button').dataset.code);
-      addToWishlist(code);
-  }
-  else{
-    if(!event.target.matches('button.heartBtn') && !event.target.matches('button.productCardButton')){
-      return;
-    }
+//top rated function
+function LoadProductsByRatings() {
   
-  
-}}
-
-
-
-const addToWishlist = pID => {
- 
-
-  const cartItem = wishlist.find(item => item.ID == pID);
-
-  if (cartItem) {  // if a cartItem was found
-    cartItem.qty++;
-    alert("Item has been already added to wishlist ");
-  } else {
-    wishlist.push({ID: pID, qty: 1});
-    alert("New wishlist item has been added wishlist");
-  }
-}
-
-//add to wishlist
-
-const addItemToCart = pID => {
-  // [ {courseid: 101, qty: 1} ]
-
-  const cartItem = shoppingCart.find(item => item.ID == pID);
-
-  if (cartItem) {  // if a cartItem was found
-    cartItem.qty++;
-    alert("Another item has been added to your cart");
-  } else {
-    shoppingCart.push({ID: pID, qty: 1});
-    alert("A new item has been added to your cart");
-  }
-}
-
-
-
-function LoadFilterMenu(){
-  const x = document.getElementById("filtermenu");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-//filter functions
-
-function LoadProductsByPriceFilter(){
- const price=document.getElementById('PriceFilter').value;
- const searchResultsArray=shoesData.filter(p=> p.price <= price);
- renderProducts(searchResultsArray);
-}
-
-
-
-function LoadProductsByFilters(){
-  //heirarchy category>rating >brand> colour > size >  discount 
-  let category;
-  let rating;
-  let brand;
-  let discount;
-  arrayByCategory=[];
-  arrayByRatings=[];
-  arrayByBrand=[];
-  arrayByDiscount=[];
-
-  if(document.querySelector('input[name="category"]:checked')!=null){
-    category=document.querySelector('input[name="category"]:checked').value;
-    alert(category);
-    arrayByCategory=shoesData.filter(p=>p.category==category);
-  }
-  else {
-    arrayByCategory=shoesData;
-  }
-  if(document.querySelector('input[name="rating"]:checked') != null){
-    rating=document.querySelector('input[name="rating"]:checked').value;
-    arrayByRatings=arrayByCategory.filter(p=>p.rating >= rating);
-  }
-  else{
-    arrayByRatings=arrayByCategory;
-  }
-
-  if(document.querySelector('input[name="brand"]:checked')!=null){
-    brand=document.querySelector('input[name="brand"]:checked').value;
-    arrayByBrand=arrayByRatings.filter(p=>p.brand.toLowerCase() == brand.toLowerCase());
-  }
-  else{
-    arrayByBrand=arrayByRatings;
-  }
-
-  if(document.querySelector('input[name="discount"]:checked')!=null){
-    discount=document.querySelector('input[name="discount"]:checked').value;
-    arrayByDiscount=arrayByBrand.filter(p=>p.discount == discount);
-  }
-  else{
-    arrayByDiscount=arrayByBrand;
-  }
-
-  renderProducts(arrayByDiscount);
-  
-
+  const ratingArray = webStore
+    .slice(0)
+    .sort((x, y) => (x.rating < y.rating ? 1 : -1));
+  renderProducts(ratingArray);
 }
 
 
 //sorting functions
-function LoadProductsPriceHighTolow() {
-  //alert("in high to low");
-  const PriceHighToLowArray = shoesData
-    .slice(0)
-    .sort((a, b) => (a.price < b.price ? 1 : -1));
-  renderProducts(PriceHighToLowArray);
-}
 
 function LoadProductsPriceLowToHigh() {
-  //alert("in low to high");
-  const PriceLowToHighArray = shoesData
+
+  const PriceLowToHighArray = webStore
     .slice(0)
-    .sort((a, b) => (a.price > b.price ? 1 : -1));
+    .sort((x, y) => (x.price > y.price ? 1 : -1));
   renderProducts(PriceLowToHighArray);
 }
 
-function LoadProductsByAvailability() {
-  //alert("in availability function");
-  const availabilityArray = shoesData
-    .slice(0)
-    .sort((a, b) => (a.stock < b.stock ? 1 : -1));
-  renderProducts(availabilityArray);
+
+function LoadProductsPriceHighTolow() {
+
+  const PriceHighToLowArray = webStore 
+    .slice(0)                              // start from 1
+    .sort((x, y) => (x.price < y.price ? 1 : -1));
+  renderProducts(PriceHighToLowArray);
 }
 
-function LoadProductsByRatings() {
-  //alert("in rating function");
-  const ratingArray = shoesData
-    .slice(0)
-    .sort((a, b) => (a.rating < b.rating ? 1 : -1));
-  renderProducts(ratingArray);
-}
 
+
+
+// products on sale function
 function LoadProductsOnSale(){
-  //alert("in onsale function");
-  const onSaleArray= shoesData.slice(0).filter(p => p.onSale == true).filter(p=>p.stock>0);
-  renderProducts(onSaleArray);
+  
+  const productsOnSaleArray= webStore.slice(0).filter(p => p.productsOnSale == true).filter(p=>p.stock>0);
+  renderProducts(productsOnSaleArray);
 }
 
 
-
-
-/*const addToClickToHeartBtn = element => {
-  const addToWishlist = () => {
-    if (element.style.color != 'red') {
-      element.style.color = 'red';
-    } else {
-      element.style.color = 'rgb(63, 46, 46)'
-    };
+function renderProducts(array) {
+  document.getElementById(`app`).innerHTML = array.map(getShoesAsHtml).join("\n");
+  let result = 'Products';
+  if (array.length == 1) {
+    result = 'Products'
+    document.getElementById('numResults').innerHTML = `(${array.length} ${result})`;
   }
-
-  element.addEventListener('click', addToWishlist)
-}
-
-const addToClickToCartBtn = element => {
-  const addTOCart = () => {
-    if (element.style.backgroundColor != `red` && element.innerHTML != `Remove from Cart`) {
-      element.style.backgroundColor = `red`;
-      element.innerHTML = `Remove from Cart`;
-    } else {
-      element.style.backgroundColor = `rgba(0, 0, 0, .87)`;
-      element.innerHTML = `Add to Cart`;
-    }
-
-  }
-  element.addEventListener('click', addTOCart)
-}*/
-
-
-function renderProducts(arr) {
-  document.getElementById(`app`).innerHTML = arr.map(getShoesAsHtml).join("\n");
-  let res = 'Products';
-  if (arr.length == 1) {
-    res = 'Product'
-    document.getElementById('numResults').innerHTML = `(${arr.length} ${res})`;
-  }
- if(arr.length==0){
-  res = 'Products'
-    document.getElementById('numResults').innerHTML = `(${arr.length} ${res})`;
-    document.getElementById(`app`).innerHTML=`<h1>O RESULTS found!</h1>`
+ if(array.length==0){
+  result = 'Products'
+    document.getElementById('numResults').innerHTML = `(${array.length} ${result})`;
+    document.getElementById(`app`).innerHTML=`<p>NO RESULT FOUND!</p>`
  }
  
-}
+} 
 
 
 
@@ -583,27 +425,14 @@ function renderProducts(arr) {
 //execution
 window.addEventListener('load', () => {
 
-//const heartBtn = document.querySelectorAll(`.heartBtn`);
-//heartBtn.forEach(addToClickToHeartBtn);
-//const AddtoCartBtn = document.querySelectorAll(`.productCardButton`);
-//AddtoCartBtn.forEach(addToClickToCartBtn);
-document.getElementById(`find`).addEventListener("change",LoadProductsByName);
+document.getElementById(`search`).addEventListener("change",LoadProductsByName);
 document.getElementById(`PriceHighToLow`).addEventListener("click", LoadProductsPriceHighTolow);
 document.getElementById(`PriceLowToHigh`).addEventListener("click", LoadProductsPriceLowToHigh);
-document.getElementById(`availability`).addEventListener("click", LoadProductsByAvailability);
 document.getElementById(`topRated`).addEventListener("click", LoadProductsByRatings);
-document.getElementById(`onSale`).addEventListener("click", LoadProductsOnSale);
-document.getElementById(`filter`).addEventListener("click", LoadFilterMenu);
-document.getElementById(`PriceFilter`).addEventListener("change",LoadProductsByPriceFilter);
-//filter button to be removed
-document.getElementById(`filterbtn`).addEventListener("click",LoadProductsByFilters)
+document.getElementById(`productsOnSale`).addEventListener("click", LoadProductsOnSale);
 document.getElementById('app').addEventListener("click", handleClicksofBtns);
-document.querySelectorAll('[name="brand"]').forEach(chkbox => chkbox.addEventListener('change', LoadProductsByFilters));
-document.querySelectorAll('[name="discount"]').forEach(chkbox => chkbox.addEventListener('change', LoadProductsByFilters));
-document.querySelectorAll('[name="category"]').forEach(chkbox => chkbox.addEventListener('change', LoadProductsByFilters));
-document.querySelectorAll('[name="rating"]').forEach(chkbox => chkbox.addEventListener('change', LoadProductsByFilters));
-document.querySelectorAll('[name="size"]').forEach(chkbox => chkbox.addEventListener('change', LoadProductsByFilters));
-//start
-getShoesAsHtml(shoesData);
+
+
+getShoesAsHtml(webStore);
 
 });
