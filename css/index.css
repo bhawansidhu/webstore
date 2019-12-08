@@ -243,31 +243,42 @@ header {
 }
 
 .footer{
-    background-color: rgb(36, 31, 31);
+    background-color: rgb(31, 25, 25);
     
 }
 
-.footerArea {
-    font-weight: bold;
-    font-size: 19px;
-    color: white;
+.footer-links, .socials-items {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1.5em;
-    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 1em;
+}
+
+.link-items {
+    display: block;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.social-icon {
+    color: white;
+ filter: invert(100%)  brightness(100%) contrast(100%); 
+    width: 2.5em;
+}
+
+.socials-items > p {
+    grid-column: 1/4;
+    margin: .5em 0;
+    font-weight: bold;
+   color: white;
+}
+
+.copyright {
     text-align: center;
-
+    margin: 1.5em 0;
+    color: white;
 }
-
-
-.footerListItem li a {
-    list-style-type: none;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(207, 205, 204);
-    font-size: 17px;
-}
-
-
 
 
 /* For Mobiles */ 
