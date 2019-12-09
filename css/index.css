@@ -121,6 +121,14 @@ header {
     text-align: center;
     font-weight: bold;
     color: rgb(95, 11, 64);
+
+
+}
+
+.mainFilter{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    
 }
 
 .leftNavBar {
@@ -140,11 +148,7 @@ header {
     text-decoration: underline;
 }
 
-.layoutTheme {
-    display: grid;
-    grid-template-columns: 0.2fr 0.8fr;
-    
-}
+
 
 .productsOnSaleAdd{
     color: darkgreen;
@@ -226,7 +230,7 @@ header {
     color: white;
 }
 
-.heartBtn {
+/*.heartBtn {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -241,7 +245,7 @@ header {
     opacity: 2;
     color: rgb(80, 6, 53)
 
-}
+} */
 
 .footer{
     background-color: rgb(31, 25, 25);
@@ -284,21 +288,82 @@ header {
 
 /* For Mobiles */ 
 @media screen and (max-width:320px) {
+.navList{
+    list-style-type: none;
     
-  
-  }
-  
-  
+
+}
+.search {
+    width: 200px;
+
+}
+.searchbar{
+    margin-top: 9em;
+    
+}
+
+.display {
+    margin-top: 3em;
+}
+
+.sortList .sortListItem {
+    font-size: 0.6em;
+    padding: 0.3em 0.4em;
+    display: inline-block;
+    /* margin-top: 1.5em; */
+}
+
+#topRated{
+    margin-top: 9em;
+}
+
+
+}
+
   /* For Tablets */
   
-  @media screen and (max-width:927px) and (min-width:320px){
-      
+  @media screen and (max-width:924px) and (min-width:320px){
+      .nav{
+          padding-right: 11em;
+      }
+
+      .sortList .sortListItem {
+        font-size: 0.2em;
+        padding: 0em 0.5em;
+        display: inline-block;
+      }
+
+      .leftNavBar {
+          width: 17em;
+      }
+
+      .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        width: 40em;
+       }
      
   }
   
   /* For Desktop */
-  @media screen and (max-width:1128px) and (min-width:928px){
+  @media screen and (max-width:1143px) and (min-width:928px){
       
-      
+    .searchbar {
+        text-align: center;
+        margin-top: 4em;
+    }
+
+    .display {
+        margin-top: 3em;
+    }
+    .leftNavBar {
+        width: 17em;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        width: 50em;
+       }
+
   }
   

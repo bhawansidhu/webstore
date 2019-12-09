@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webstore</title>
-  <meta name="description" content="Ali Express Webstore show 20 products">
+  <meta name="description" content="Ali Express Webstore show 20 products of women clothes and footwear">
   <meta name="author" content="Bhawanpreet Kaur Sidhu">
   <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -57,11 +57,12 @@
     </nav>-->
 
     <!-- Search the site -->
-    <form class="searchbar">
-      
-        <input type="search" name="searchbar" placeholder="Search product with name"  class= "search" id="search">
-      
-      <button type="button" id="searchBtn"><span class="material-icons">search</span></button>
+    <form>
+      <div class="searchbar">
+        <input type="search" name="searchbar" placeholder="Search product with name" class="search" id="search">
+
+        <button type="button" id="searchBtn"><span class="material-icons">search</span></button>
+      </div>
     </form>
 
   </header>
@@ -69,9 +70,7 @@
   <main>
     <section class="sortMenuBar">
       <ul class="sortList">
-        <li class="sortListItem">
-          Sort By
-        </li>
+
         <li class="sortListItem"><button type="button" class="sortBtn" id="topRated">Top Rated</button>
         </li>
         <li class="sortListItem"><button type="button" class="sortBtn" id="PriceHighToLow">Price, Highest to
@@ -85,20 +84,13 @@
     </section>
 
     <div>
-      <p class="display">Displaying Products: <small id="resultInNumber"></small></p>
+      <p class="display">Search Result: <small id="resultInNumber"></small></p>
     </div>
 
-    <section class="layoutTheme">
+    <section class="mainFilter">
       <!-- Filtering product form -->
       <article class="leftNavBar" id="filter">
         <form>
-
-          <fieldset>
-            <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Price
-            </legend>
-            <input type="text" name="PriceSearch" id="PriceFilter">
-          </fieldset>
-          <hr>
           <fieldset>
             <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">women
             </legend>
@@ -134,7 +126,7 @@
           <hr>
           <fieldset>
             <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Ratings
-              (at least)</legend>
+            </legend>
             <ol>
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour">
@@ -191,9 +183,11 @@
             <legend style="font-weight:bold;  font-family: 'Arial Narrow Bold', sans-serif; font-size: 18px;">Category
             </legend>
             <ul>
-              <li><input type="checkbox" name="category" value="casual" id="causal"><label for="causal">Casual</label></li>
-              <li><input type="checkbox" name="category" value="Formal" id="formal"><label for="formal">Formal</label></li>
-              
+              <li><input type="checkbox" name="category" value="casual" id="causal"><label for="causal">Casual</label>
+              </li>
+              <li><input type="checkbox" name="category" value="Formal" id="formal"><label for="formal">Formal</label>
+              </li>
+
             </ul>
           </fieldset>
 
@@ -230,9 +224,9 @@
           <img src="img/instagram.svg" alt="instagram icon" class="social-icon">
           <img src="img/twitter.svg" alt="twitter icon" class="social-icon">
         </div>
-              </section>
+      </section>
       <section class="copyright">
-        <p>&copy;  Women Fashion.com | 2019 All Rights Reserved.</p>
+        <p>&copy; Women Fashion.com | 2019 All Rights Reserved.</p>
       </section>
     </footer>
     <script src="js/index.js"></script>

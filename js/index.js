@@ -312,7 +312,7 @@ const footWear = [footWear1, footWear2, footWear3, footWear4, footWear5, footWea
 const webStore = dress.concat(footWear);
 function getDataAsHtml(webStore ) {
   let cartBtn=``;
-  let heartButton=`<button type="button" class="heartBtn" data-code="${webStore.productCode}" id="heartBtn"><span class="material-icons">favorite</span></button>`;
+  
   let productsOnSale='';
   let outOfStock=``;
   if( webStore.productsOnSale ==true){
@@ -327,7 +327,7 @@ function getDataAsHtml(webStore ) {
   return `
     <section class="productsList"> 
     <img class="productImage" src="${webStore.imageUrl}"  style="width:100%;height:230px;" alt="${webStore.name}">
-    ${heartButton}
+    
     ${productsOnSale}
     <h1 class="ProductName"><strong>${webStore.name}</strong></h1>
         <ul class="productListItems">
@@ -416,7 +416,7 @@ document.getElementById(`PriceHighToLow`).addEventListener("click", LoadProducts
 document.getElementById(`PriceLowToHigh`).addEventListener("click", LoadProductsPriceLowToHigh);
 document.getElementById(`topRated`).addEventListener("click", LoadProductsByRatings);
 document.getElementById(`productsOnSale`).addEventListener("click", LoadProductsOnSale);
-document.getElementById('productId').addEventListener("click", handleClicksofBtns);
+
 
 
 
