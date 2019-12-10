@@ -123,7 +123,7 @@ const dress9 = {
   productID: 2509,
   name: `Blue Skirt`,
   imageUrl: `img/blueskirt.jpg`,
-  colors: [`white`, `blue`, `balck`, `red`],
+  colors: [`white`, `blue`, `balck`],
   productsOnSale: true,
   stock: 22,
   sizes: [`XS`,`S`,`M`,`L`,`XL`],
@@ -138,14 +138,14 @@ const dress10 = {
   productID: 2510,
   name: `red Skirt`,
   imageUrl: `img/red skirt.jpg`,
-  colors: [`white`, `blue`, `balck`, `red`],
+  colors: [`white`, `balck`, `red`],
   productsOnSale: true,
   stock: 13,
   sizes: [`XS`,`S`,`M`,`L`,`XL`],
   discount: `10%`,
   category: `causal`,
   price: `355`,
-  rating: 4.5,
+  rating: 5,
 
 };
 
@@ -179,12 +179,7 @@ const dress12 = {
 
 };
 
-
-
 const dress= [ dress1, dress2,  dress3, dress4, dress5, dress6, dress7, dress8, dress9, dress10, dress11, dress12];
-
-
-
 
 const footWear1 = {
   productID: 2513,
@@ -349,7 +344,7 @@ document.getElementById(`productId`).innerHTML = webStore
 
   
   //search functionality
-function LoadProductsByName(n){
+function getProductsByName(n){
   n.preventDefault();
   const search=document.getElementById('search').value;
   const lowerCase=search.trim().toLowerCase();
@@ -358,31 +353,25 @@ function LoadProductsByName(n){
 }
 
 //top rated function
-function LoadProductsByRatings() {
+function getProductsByRatings() {
   
-  const ratingArray = webStore
-    .slice(0)
-    .sort((x, y) => (x.rating < y.rating ? 1 : -1));
+  const ratingArray = webStore.sort((x, y) => (x.rating < y.rating ? 1 : -1));
   sortByProducts(ratingArray);
 }
 
 
 //sorting functions
 
-function LoadProductsPriceLowToHigh() {
+function getProductsPriceLowToHigh() {
 
-  const PriceLowToHighArray = webStore
-    .slice(0)
-    .sort((x, y) => (x.price > y.price ? 1 : -1));
+  const PriceLowToHighArray = webStore.sort((x, y) => (x.price > y.price ? 1 : -1));
   sortByProducts(PriceLowToHighArray);
 }
 
 
-function LoadProductsPriceHighTolow() {
+function getProductsPriceHighTolow() {
 
-  const PriceHighToLowArray = webStore 
-    .slice(0)                              // start from 1
-    .sort((x, y) => (x.price < y.price ? 1 : -1));
+  const PriceHighToLowArray = webStore .sort((x, y) => (x.price < y.price ? 1 : -1));
   sortByProducts(PriceHighToLowArray);
 }
 
@@ -390,9 +379,9 @@ function LoadProductsPriceHighTolow() {
 
 
 // products on sale function
-function LoadProductsOnSale(){
+function getProductsOnSale(){
   
-  const productsOnSaleArray= webStore.slice(0).filter(p => p.productsOnSale == true).filter(p=>p.stock>0);
+  const productsOnSaleArray= webStore.filter(p => p.productsOnSale == true);
   sortByProducts(productsOnSaleArray);
 }
 
@@ -405,17 +394,13 @@ function sortByProducts(array) {
     document.getElementById('resultInNumber').innerHTML = `(${array.length} ${result})`;
   }} 
 
-
-
-
-//execution
 window.addEventListener('load', () => {
 
-document.getElementById(`search`).addEventListener("change",LoadProductsByName);
-document.getElementById(`PriceHighToLow`).addEventListener("click", LoadProductsPriceHighTolow);
-document.getElementById(`PriceLowToHigh`).addEventListener("click", LoadProductsPriceLowToHigh);
-document.getElementById(`topRated`).addEventListener("click", LoadProductsByRatings);
-document.getElementById(`productsOnSale`).addEventListener("click", LoadProductsOnSale);
+document.getElementById(`search`).addEventListener("change", getProductsByName);
+document.getElementById(`PriceHighToLow`).addEventListener("click", getProductsPriceHighTolow);
+document.getElementById(`PriceLowToHigh`).addEventListener("click", getProductsPriceLowToHigh);
+document.getElementById(`topRated`).addEventListener("click", getProductsByRatings);
+document.getElementById(`productsOnSale`).addEventListener("click", getProductsOnSale);
 
 
 
