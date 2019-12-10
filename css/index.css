@@ -8,10 +8,11 @@ body{
 header {
     background-color:rgb(228, 236, 236);
     width: 100%;
-    height: 32vh;
+    height: 30vh;
 }
 
 .logo {
+    margin-top: 1em;
     text-align: center;
 }
 .navList {
