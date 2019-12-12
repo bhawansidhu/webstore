@@ -352,14 +352,14 @@ function getProductsByName(n){
 
 const formalFilter=() => {
   const formalDresses = webStore.filter(p => p.category == `Formal`);
-  renderDresses(formalDresses);
+  sortByProducts(formalDresses);
 }
 
 
 
 const casualFilter = () => {
   const casualDresses = webStore.filter(P => P.category == `Casual`);
-  renderDresses(casualDresses);
+  sortByProducts(casualDresses);
 
 }
 

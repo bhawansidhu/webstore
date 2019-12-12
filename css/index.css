@@ -138,7 +138,7 @@ header {
     padding: 2em;
     margin: 1em 0 1em 2em;
     color: rgb(248, 255, 249);
-    height: auto;
+     height: 72vh;
 }
 
 #filterBtn{
@@ -261,12 +261,6 @@ header {
     width: 2.5em;
 }
 
-.socials-items > p {
-    grid-column: 1/4;
-    margin: .5em 0;
-    font-weight: bold;
-   color: white;
-}
 
 .copyright {
     text-align: center;
@@ -276,14 +270,17 @@ header {
 
 
 /* For Mobiles */ 
-@media screen and (max-width:320px) {
-.navList{
-    list-style-type: none;
+@media screen and (max-width:475spx) and (min-width:320px) {
+
+.mainFilter{
+    display: grid;
+    grid-template-columns:  1fr ;
+}
     
 
-}
+
 .search {
-    width: 200px;
+    width: 150px;
 
 }
 .searchbar{
@@ -311,10 +308,17 @@ header {
 
   /* For Tablets */
   
-  @media screen and (max-width:924px) and (min-width:320px){
+  @media screen and (max-width:925px) and (min-width:320px){
       .nav{
-          padding-right: 11em;
+          padding-right: 7em;
       }
+
+      .searchbar{
+          margin-top: 2em;
+          margin-left: 1em;
+           
+    }
+      
 
       .sortList .sortListItem {
         font-size: 0.2em;
@@ -328,8 +332,8 @@ header {
 
       .products {
         display: grid;
-        grid-template-columns: 1fr 1fr ;
-        width: 40em;
+        grid-template-columns:  1fr ;
+        width: 30em;
        }
      
   }
@@ -339,7 +343,7 @@ header {
       
     .searchbar {
         text-align: center;
-        margin-top: 4em;
+        
     }
 
     .display {
