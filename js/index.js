@@ -1,4 +1,5 @@
-const dress1 = {
+const webStore =[
+   {
   productID: 2501,
   name: `Blue Shirt`,
   imageUrl: `img/blue shirt.jpg`,
@@ -11,9 +12,9 @@ const dress1 = {
   price: `135`,
   rating: 4.3,
 
-};
+},
 
-const dress2 = {
+  {
   productID: 2502,
   name: `Red Shirt`,
   imageUrl: `img/red shirt.jpg`,
@@ -26,9 +27,9 @@ const dress2 = {
   price: `147`,
   rating: 4.4,
 
-};
+},
 
-const dress3 = {
+ {
   productID: 2503,
   name: `white Shirt`,
   imageUrl: `img/white shirt.jpg`,
@@ -41,9 +42,9 @@ const dress3 = {
   price: `168`,
   rating: 4.3,
 
-};
+},
 
-const dress4 = {
+ {
   productID: 2504,
   name: `Black Shirt`,
   imageUrl: `img/black shirt.jpg`,
@@ -56,10 +57,10 @@ const dress4 = {
   price: `124`,
   rating: 4.4,
 
-};
+},
 
 
-const dress5 = {
+ {
   productID: 2505,
   name: `black jeans`,
   imageUrl: `img/black jeans.jpg`,
@@ -72,9 +73,9 @@ const dress5 = {
   price: `150`,
   rating: 4.5,
 
-};
+},
 
-const dress6 = {
+ {
   productID: 2506,
   name: `blue jeans`,
   imageUrl: `img/blue jeans.jpg`,
@@ -87,9 +88,8 @@ const dress6 = {
   price: `130`,
   rating: 4.3,
 
-};
-
-const dress7 = {
+},
+ {
   productID: 2507,
   name: `skinny jeans`,
   imageUrl: `img/skinny jeans.jpg`,
@@ -102,9 +102,9 @@ const dress7 = {
   price: `120`,
   rating: 4.5,
 
-};
+},
 
-const dress8 = {
+ {
   productID: 2508,
   name: `white jeans`,
   imageUrl: `img/white jeans.jpg`,
@@ -117,9 +117,9 @@ const dress8 = {
   price: `120`,
   rating: 4.3,
 
-};
+},
 
-const dress9 = {
+ {
   productID: 2509,
   name: `Blue Skirt`,
   imageUrl: `img/blueskirt.jpg`,
@@ -132,9 +132,9 @@ const dress9 = {
   price: `350`,
   rating: 4.4,
 
-};
+},
 
-const dress10 = {
+ {
   productID: 2510,
   name: `red Skirt`,
   imageUrl: `img/red skirt.jpg`,
@@ -147,9 +147,9 @@ const dress10 = {
   price: `355`,
   rating: 5,
 
-};
+},
 
-const dress11 = {
+ {
   productID: 2511,
   name: `black Skirt`,
   imageUrl: `img/black skirt.jpg`,
@@ -162,9 +162,9 @@ const dress11 = {
   price: `420`,
   rating: 4.3,
 
-};
+},
 
-const dress12 = {
+{
   productID: 2512,
   name: `white Skirt`,
   imageUrl: `img/white skirt.jpeg`,
@@ -177,11 +177,11 @@ const dress12 = {
   price: `348`,
   rating: 4.4,
 
-};
+},
 
-const dress= [ dress1, dress2,  dress3, dress4, dress5, dress6, dress7, dress8, dress9, dress10, dress11, dress12];
 
-const footWear1 = {
+
+ {
   productID: 2513,
   name: `Ankle shoes`,
   imageUrl: `img/ankle shoes.jpg`,
@@ -194,9 +194,9 @@ const footWear1 = {
   price: `200`,
   rating: 4.3,
 
-};
+},
 
-const footWear2 = {
+{
   productID: 2514,
   name: `brown shoes`,
   imageUrl: `img/brown shoes.jpg`,
@@ -209,9 +209,9 @@ const footWear2 = {
   price: `190`,
   rating: 4.4,
 
-};
+},
 
-const footWear3 = {
+ {
   productID: 2515,
   name: `white shoes`,
   imageUrl: `img/white shoes.jpg`,
@@ -224,9 +224,9 @@ const footWear3 = {
   price: `290`,
   rating: 4.3,
 
-};
+},
 
-const footWear4 = {
+ {
   productID: 2516,
   name: `snow shoes`,
   imageUrl: `img/snow shoes.jpg`,
@@ -239,10 +239,10 @@ const footWear4 = {
   price: `180`,
   rating: 4.4,
 
-};
+},
 
 
-const footWear5 = {
+ {
   productID: 2517,
   name: `Black heels`,
   imageUrl: `img/black heels.jpg`,
@@ -255,9 +255,9 @@ const footWear5 = {
   price: `390`,
   rating: 4.4,
 
-};
+},
 
-const footWear6 = {
+{
   productID: 2518,
   name: `red heels`,
   imageUrl: `img/red heels.jpg`,
@@ -270,9 +270,9 @@ const footWear6 = {
   price: `160`,
   rating: 4.5,
 
-};
+},
 
-const footWear7 = {
+ {
   productID: 2519,
   name: `white heels`,
   imageUrl: `img/white heel.jpg`,
@@ -285,9 +285,9 @@ const footWear7 = {
   price: `190`,
   rating: 4.4,
 
-};
+},
 
-const footWear8 = {
+ {
   productID: 2520,
   name: `Blue heels`,
   imageUrl: `img/blue heels.jpg`,
@@ -299,17 +299,13 @@ const footWear8 = {
   category: `Formal`,
   price: `150`,
   rating: 4.3,
+ }
 
-};
+ ];
 
-const footWear = [footWear1, footWear2, footWear3, footWear4, footWear5, footWear6, footWear7, footWear8];
-
-const webStore = dress.concat(footWear);
 function getDataAsHtml(webStore ) {
-
+let productsOnSale='';
   let cartBtn=``;
-  
-  let productsOnSale='';
   let outOfStock=``;
   if( webStore.productsOnSale ==true){
     productsOnSale=`<small class="productsOnSaleAdd">product On Sale!<br>Hurry up !!!</small>`;
@@ -339,27 +335,11 @@ function getDataAsHtml(webStore ) {
         </section>`;
 }
 
-document.getElementById(`productId`).innerHTML = webStore 
-  .map(getDataAsHtml)
-  .join("\n");
+document.getElementById(`productId`).innerHTML = webStore .map(getDataAsHtml).join("\n");
 
 
-  const formalFilter=() => {
-    const formalDresses = webStore.filter(p => p.category == `Formal`);
-    renderDresses(formalDresses);
-  }
-  
-  
-  
-  const casualFilter = () => {
-    const casualDresses = webStore.filter(c => c.category == `casual`);
-    renderDresses(casualDresses);
-  
-  }
-  
   
 
-  
   //search functionality
 function getProductsByName(n){
   n.preventDefault();
@@ -367,6 +347,20 @@ function getProductsByName(n){
   const lowerCase=search.trim().toLowerCase();
   const searchResultsArray=webStore .filter(p=> p.name.toLowerCase().includes(lowerCase));
   sortByProducts(searchResultsArray);
+}
+
+
+const formalFilter=() => {
+  const formalDresses = webStore.filter(p => p.category == `Formal`);
+  renderDresses(formalDresses);
+}
+
+
+
+const casualFilter = () => {
+  const casualDresses = webStore.filter(P => P.category == `Casual`);
+  renderDresses(casualDresses);
+
 }
 
 //top rated function
