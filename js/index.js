@@ -349,7 +349,7 @@ function getProductsByName(n){
   sortByProducts(searchResultsArray);
 }
 
-
+// category filter 
 const formalFilter=() => {
   const formalDresses = webStore.filter(p => p.category == `Formal`);
   sortByProducts(formalDresses);
@@ -413,7 +413,7 @@ document.getElementById(`PriceLowToHigh`).addEventListener("click", getProductsP
 document.getElementById(`topRated`).addEventListener("click", getProductsByRatings);
 document.getElementById(`productsOnSale`).addEventListener("click", getProductsOnSale);
 document.getElementById(`casual`).addEventListener("click",casualFilter);
-  document.getElementById(`formal`).addEventListener("click",formalFilter);
+document.getElementById(`formal`).addEventListener("click",formalFilter);
   
 
 
