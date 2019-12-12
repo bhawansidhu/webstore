@@ -270,7 +270,7 @@ header {
 
 
 /* For Mobiles */ 
-@media screen and (max-width:475spx) and (min-width:320px) {
+@media screen and (max-width:500px) and (min-width:320px) {
 
 .mainFilter{
     display: grid;
@@ -280,7 +280,7 @@ header {
 
 
 .search {
-    width: 150px;
+    width: 250px;
 
 }
 .searchbar{
@@ -296,12 +296,16 @@ header {
     font-size: 0.6em;
     padding: 0.3em 0.4em;
     display: inline-block;
-    /* margin-top: 1.5em; */
+   
+}
+.leftNavBar {
+    width: 17em;
+    margin-left: 7em;
+}
+.products{
+    margin-left: 1em;
 }
 
-#topRated{
-    margin-top: 9em;
-}
 
 
 }
